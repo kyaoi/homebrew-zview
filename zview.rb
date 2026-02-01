@@ -5,21 +5,21 @@
 class Zview < Formula
   desc "Fast, lightweight, read-only PDF viewer"
   homepage "https://github.com/kyaoi/zview"
-  version "0.1.0"
+  version "0.1.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/kyaoi/zview/releases/download/v0.1.0/zview_Darwin_x86_64.tar.gz"
-      sha256 "6a2e7cb788b61c60a21b6a8ee70e403fe5884ee0c372ff71240341c6c15ebfcb"
+      url "https://github.com/kyaoi/zview/releases/download/v0.1.1/zview_Darwin_x86_64.tar.gz"
+      sha256 "d593db8449e4e832c5dd6f5c4e4822d408b10403e226e48b6f3ab319eab87c3d"
 
       def install
         bin.install "zview"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/kyaoi/zview/releases/download/v0.1.0/zview_Darwin_arm64.tar.gz"
-      sha256 "135d1e92c8f44e8e2f3c69abbf3412bc749c543ab589a4d2f3821c65665982eb"
+      url "https://github.com/kyaoi/zview/releases/download/v0.1.1/zview_Darwin_arm64.tar.gz"
+      sha256 "37eecfd87f5300f7844efa0b1a214e33ddedc9e3730f7ccf0ccac2b318b9958c"
 
       def install
         bin.install "zview"
@@ -29,15 +29,15 @@ class Zview < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kyaoi/zview/releases/download/v0.1.0/zview_Linux_x86_64.tar.gz"
-      sha256 "4425919bc4d33c6644c9b92239741c1e11e91c26437a658ce9eac13b820ed084"
+      url "https://github.com/kyaoi/zview/releases/download/v0.1.1/zview_Linux_x86_64.tar.gz"
+      sha256 "fc6288d25059f71dc8448d00cb1b62c3525d08ef671a9a90a35334f62891b13b"
       def install
         bin.install "zview"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kyaoi/zview/releases/download/v0.1.0/zview_Linux_arm64.tar.gz"
-      sha256 "b6540e4f0e16b1821003ad10ef2e53fb69dca01b0bf76d61f588206704bc34b9"
+      url "https://github.com/kyaoi/zview/releases/download/v0.1.1/zview_Linux_arm64.tar.gz"
+      sha256 "bb0fb2d6fab210318f1a12c5617a5b18a739ef3070886df87e2406953c0f7514"
       def install
         bin.install "zview"
       end
