@@ -11,7 +11,7 @@ class Zview < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/kyaoi/zview/releases/download/v0.1.1/zview_Darwin_x86_64.tar.gz"
-      sha256 "d593db8449e4e832c5dd6f5c4e4822d408b10403e226e48b6f3ab319eab87c3d"
+      sha256 "2ef6f9b1831bc8b1092f55c25d5b5bb0f1a72dc8f35615ea51d5e6c2118778f0"
 
       def install
         bin.install "zview"
@@ -19,7 +19,7 @@ class Zview < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/kyaoi/zview/releases/download/v0.1.1/zview_Darwin_arm64.tar.gz"
-      sha256 "37eecfd87f5300f7844efa0b1a214e33ddedc9e3730f7ccf0ccac2b318b9958c"
+      sha256 "3997432907c7d6ceb0d078f4b7b3d1a9021477e40f6bc99c99674ee6c445dde3"
 
       def install
         bin.install "zview"
@@ -30,14 +30,14 @@ class Zview < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/kyaoi/zview/releases/download/v0.1.1/zview_Linux_x86_64.tar.gz"
-      sha256 "fc6288d25059f71dc8448d00cb1b62c3525d08ef671a9a90a35334f62891b13b"
+      sha256 "bc4a27bc60e71117426cd8692d7289a9900d6413c78baaed5f1923326db94b77"
       def install
         bin.install "zview"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/kyaoi/zview/releases/download/v0.1.1/zview_Linux_arm64.tar.gz"
-      sha256 "bb0fb2d6fab210318f1a12c5617a5b18a739ef3070886df87e2406953c0f7514"
+      sha256 "de92866358dee57be54faf0093c565454dcf628dd17a336c8be642f41a22a8ee"
       def install
         bin.install "zview"
       end
