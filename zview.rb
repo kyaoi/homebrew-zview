@@ -5,21 +5,21 @@
 class Zview < Formula
   desc "Fast, lightweight, read-only PDF viewer"
   homepage "https://github.com/kyaoi/zview"
-  version "1.0.0"
+  version "1.1.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/kyaoi/zview/releases/download/v1.0.0/zview_Darwin_x86_64.tar.gz"
-      sha256 "03485f46a4ce27d4669cc0f687729ad5018010c2cfabbb2b304c70eab95a0a66"
+      url "https://github.com/kyaoi/zview/releases/download/v1.1.0/zview_Darwin_x86_64.tar.gz"
+      sha256 "cc435a7010aafc7a100d364ef15577e5e6b0a43f6727c3267e72e9be889c73bf"
 
       define_method(:install) do
         bin.install "zview"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/kyaoi/zview/releases/download/v1.0.0/zview_Darwin_arm64.tar.gz"
-      sha256 "674ab9c1c474a1612e4eb4571c3ed4b6a6f2d4c223636fd3937306ce6cf1cc8e"
+      url "https://github.com/kyaoi/zview/releases/download/v1.1.0/zview_Darwin_arm64.tar.gz"
+      sha256 "947b24be9afaa6c364f708c86f7a95de9f7cb5356a00994e0e353509fd78488e"
 
       define_method(:install) do
         bin.install "zview"
@@ -29,15 +29,15 @@ class Zview < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kyaoi/zview/releases/download/v1.0.0/zview_Linux_x86_64.tar.gz"
-      sha256 "b9237474649ef550aec92f3d70c47d6f28206cfae1ad2c53fd20ed30084bff9e"
+      url "https://github.com/kyaoi/zview/releases/download/v1.1.0/zview_Linux_x86_64.tar.gz"
+      sha256 "45e35ea6daaf90abdb47847cc83c5f559bf1e8ca3b83899e56188c2ae5645845"
       define_method(:install) do
         bin.install "zview"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kyaoi/zview/releases/download/v1.0.0/zview_Linux_arm64.tar.gz"
-      sha256 "4cef344028ed71403f3f4302d6d66bf3b9782ac9611c95205ff36b77bc76d4ed"
+      url "https://github.com/kyaoi/zview/releases/download/v1.1.0/zview_Linux_arm64.tar.gz"
+      sha256 "ffd0bce871319e5ba4b187e3c783220daa0cce1e9c29edeb2e99913f54511eb4"
       define_method(:install) do
         bin.install "zview"
       end
