@@ -11,7 +11,7 @@ class Zview < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/kyaoi/zview/releases/download/v1.2.1/zview_Darwin_x86_64.tar.gz"
-      sha256 "8480deda397315681d7b8445ba28c3ebced4e0c52aa88751aaef8ebd5078951e"
+      sha256 "b7b82bdb1538d566cf82235e1490278df27c369eee4bf37ab3586b093eab178e"
 
       define_method(:install) do
         bin.install "zview"
@@ -19,7 +19,7 @@ class Zview < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/kyaoi/zview/releases/download/v1.2.1/zview_Darwin_arm64.tar.gz"
-      sha256 "860b912c86ad1d5a6142578f1162026235fa337a6d68a1b0b098b55162a85012"
+      sha256 "4c46be0f91416046a01c85a1f3b8bc65b65ae5e19964a4ce34ff0e1a3f271337"
 
       define_method(:install) do
         bin.install "zview"
@@ -30,14 +30,14 @@ class Zview < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/kyaoi/zview/releases/download/v1.2.1/zview_Linux_x86_64.tar.gz"
-      sha256 "2c84dce2d6bc392dd84c27d447d380b27386754b7e1f028f2651fdfe53e6961d"
+      sha256 "c9279618165bbe956988338c36c1e6385aab6dcba404945dce3fa927b2b05970"
       define_method(:install) do
         bin.install "zview"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/kyaoi/zview/releases/download/v1.2.1/zview_Linux_arm64.tar.gz"
-      sha256 "29697ec18675ec24a36d61142d922ce30f7d9bbeacaae7cda2afa24364591359"
+      sha256 "69207b5203da1417613b0d8c6e3a0a60ea0799d4f1bb447727d649947f018082"
       define_method(:install) do
         bin.install "zview"
       end
